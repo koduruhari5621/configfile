@@ -6,15 +6,7 @@ eureka:
         register-with-eureka: true
         serviceUrl:
             defaultZone: http://172.17.0.2:8761/eureka
-hystrix:
-    command:
-        returnFallBackData:
-            circuitBreaker:
-                errorThresholdPercentage: 60
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 2000
+
 kafka:
     topic:
         consumer:
@@ -80,3 +72,8 @@ spring:
     cloud:
         config:
             uri: http://172.17.0.3:8888
+            
+            
+            eureka:
+    instance:
+        preferIpAddress: true
