@@ -16,5 +16,5 @@ zuul:
     routes:
         application-service:
             url: http://172.17.0.5:8086
-        remote-service:
+        maintainance-service:
             url: http://172.17.0.6:9098
