@@ -52,7 +52,7 @@ logging-filter:
     urlPatterns: /api/v1/*
 maintainance:
     service:
-        url: http://localhost:9098/api/v1/maintainance/{name}
+        url: http://172.17.0.6:9098/api/v1/maintainance/{name}
 management:
     endpoint:
         health:
