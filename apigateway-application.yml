@@ -15,6 +15,6 @@ spring:
 zuul:
     routes:
         application-service:
-            url: http://192.168.87.193:8086
+            url: http://172.17.0.5:8086
         maintainace-service:
             url: http://172.17.0.6:9098
