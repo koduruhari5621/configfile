@@ -44,11 +44,6 @@ kafka:
                         session: 10000
                     topic: KAFKA_TOPIC_FETCH
             enabled: true
-logging-filter:
-    enabled: true
-    name: httpLoggingFilter
-    order: 1
-    urlPatterns: /api/v1/*
 maintainance:
     service:
         url: http://172.17.0.6:9098/api/v1/maintainance/{name}
@@ -60,18 +55,3 @@ management:
         web:
             exposure:
                 include: '*'
-server:
-    display-name: Application-Service
-    port: 8086
-spring:
-    application:
-        name: application-service
-        version: '@project.version@'
-    cloud:
-        config:
-            uri: http://172.17.0.3:8888
-            
-            
-            eureka:
-    instance:
-        preferIpAddress: true
