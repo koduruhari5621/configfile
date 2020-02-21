@@ -1,5 +1,4 @@
-app:
-    name: api-svc
+
 eureka:
     client:
         fetch-registry: true
@@ -62,7 +61,6 @@ management:
             exposure:
                 include: '*'
 server:
-    context-path: /exampleApplication
     display-name: Application-Service
     port: 8086
 spring:
