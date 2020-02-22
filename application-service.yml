@@ -1,15 +1,5 @@
 
 
-hystrix:
-    command:
-        maintainance-service-call:
-            circuitBreaker:
-                errorThresholdPercentage: 60
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 4000
-
 
 
 eureka:
