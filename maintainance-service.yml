@@ -1,6 +1,4 @@
-spring:
-    zipkin:
-        baseUrl: 172.17.0.7:9411
+
 
 eureka:
     client:
