@@ -1,10 +1,26 @@
 
+
+hystrix:
+    command:
+        maintainance-service-call:
+            circuitBreaker:
+                errorThresholdPercentage: 60
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 4000
+
+
+
 eureka:
     client:
         fetch-registry: true
         register-with-eureka: true
         serviceUrl:
             defaultZone: http://172.17.0.2:8761/eureka
+            
+            
+            
 
 kafka:
     topic:
