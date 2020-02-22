@@ -1,5 +1,7 @@
 
-
+spring:
+    zipkin:
+        baseUrl: 172.17.0.7:9411
 
 
 eureka:
@@ -8,6 +10,7 @@ eureka:
         register-with-eureka: true
         serviceUrl:
             defaultZone: http://172.17.0.2:8761/eureka
+            
             
             
             
