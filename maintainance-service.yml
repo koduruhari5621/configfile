@@ -1,7 +1,7 @@
 
 spring:
     zipkin:
-        baseUrl: http://192.168.87.193:9411
+        baseUrl: http://172.17.0.2:9411
 
 
 
