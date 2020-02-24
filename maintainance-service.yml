@@ -29,3 +29,6 @@ management:
 spring:
     application:
         name: maintainance-service
+    zipkin:
+        baseUrl: http://172.17.0.2:9411
+        
