@@ -55,7 +55,7 @@ kafka:
             enabled: true
 maintainance:
     service:
-        url: http://172.17.0.6:9098/api/v1/maintainance/{name}
+        url: http://172.17.0.7:9098/api/v1/maintainance/{name}
 management:
     endpoint:
         health:
