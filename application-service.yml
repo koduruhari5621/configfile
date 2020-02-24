@@ -20,7 +20,7 @@ kafka:
         consumer:
             configs:
                 fetch:
-                    bootstrapservers: 192.168.87.193:9092
+                    bootstrapservers: 169.254.115.80:9092
                     clientId: example
                     enableautocommit: false
                     groupId: example_parctice
@@ -31,7 +31,7 @@ kafka:
                         session: 60000
                     topic: KAFKA_TOPIC_FETCH
                 fetch1:
-                    bootstrapservers: 192.168.87.193:9092
+                    bootstrapservers: 169.254.115.80:9092
                     clientId: example
                     enableautocommit: false
                     groupId: example_parctice_second
@@ -46,7 +46,7 @@ kafka:
             configs:
                 fetch:
                     acks: all
-                    bootstrapservers: 192.168.87.193:9092
+                    bootstrapservers: 169.254.115.80:9092
                     clientId: example
                     name: fetch
                     timeout:
