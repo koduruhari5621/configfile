@@ -11,7 +11,7 @@ kafka:
         consumer:
             configs:
                 fetch1:
-                    bootstrapservers: 169.254.115.80:9092
+                    bootstrapservers: 172.17.79.177:9092
                     clientId: example
                     enableautocommit: true
                     groupId: example_parctice_third
