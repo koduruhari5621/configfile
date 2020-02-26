@@ -5,13 +5,14 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
         serviceUrl:
-            defaultZone: http://172.17.0.3:8761/eureka
+            defaultZone: http://localhost:8761/eureka
+            #172.17.0.3
 kafka:
     topic:
         consumer:
             configs:
                 fetch1:
-                    bootstrapservers: 172.17.79.177:9092
+                    bootstrapservers: localhost:9092
                     clientId: example
                     enableautocommit: true
                     groupId: example_parctice_third
@@ -30,5 +31,5 @@ spring:
     application:
         name: maintainance-service
     zipkin:
-        baseUrl: http://172.17.0.2:9411
+        baseUrl: http://localhost:9411
         
