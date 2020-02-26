@@ -3,7 +3,8 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
         serviceUrl:
-            defaultZone: http://172.17.0.3:8761/eureka
+            defaultZone: http://localhost:8761/eureka
+            #172.17.0.3
 ribbon:
     eureka:
         enabled: true
@@ -15,6 +16,8 @@ spring:
 zuul:
     routes:
         application-service:
-            url: http://172.17.0.6:8086
+            url: http://localhost:8086
+            #172.17.0.6
         maintainance-service:
-            url: http://172.17.0.7:9098
+            url: http://localhost:9098
+            #172.17.0.7
