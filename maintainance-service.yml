@@ -12,7 +12,7 @@ kafka:
         consumer:
             configs:
                 fetch1:
-                    bootstrapservers: localhost:9092
+                    bootstrapservers: 192.168.137.81:9092
                     clientId: example
                     enableautocommit: true
                     groupId: example_parctice_third
