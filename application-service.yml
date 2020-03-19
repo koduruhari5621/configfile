@@ -1,7 +1,7 @@
 
 spring:
     zipkin:
-        baseUrl: http://192.168.137.81:9411
+        baseUrl: http://localhost:9411
 #172.17.0.2
 
 eureka:
@@ -9,7 +9,7 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
         serviceUrl:
-            defaultZone: http://192.168.137.81:8761/eureka
+            defaultZone: http://localhost:8761/eureka
             
             
             
@@ -20,7 +20,7 @@ kafka:
         consumer:
             configs:
                 fetch:
-                    bootstrapservers: 192.168.137.81:9092
+                    bootstrapservers: localhost:9092
                     clientId: example
                     enableautocommit: false
                     groupId: example_parctice
