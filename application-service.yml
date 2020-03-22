@@ -29,7 +29,7 @@ kafka:
                     timeout:
                         request: 60000
                         session: 60000
-                    topic: KAFKA_TOPIC_FETCH
+                    topic: example
                 fetch1:
                     bootstrapservers: localhost:9092
                     clientId: example
